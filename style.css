@@ -186,3 +186,49 @@ h1 {
   font-size: 0.9rem;
   padding: 24px 0;
 }
+
+/* responsiveness */ 
+@media (max-width: 600px) {
+  body {
+    padding: 24px 10px;
+  }
+
+  .container {
+    padding: 28px 18px;
+  }
+
+  .add-task-section {
+    flex-direction: column;
+  }
+
+  #task-input,
+  #add-btn {
+    width: 100%;
+  }
+
+  #add-btn {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+  }
+
+  .progress-label {
+    font-size: 0.75rem;
+  }
+
+  .task-item {
+    padding: 10px 12px;
+  }
+
+  .task-text {
+    font-size: 0.9rem;
+  }
+}
