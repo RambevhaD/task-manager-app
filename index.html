@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Manager</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>My Tasks</h1>
+      <p class="subtitle">Stay organised, one task at a time.</p>
+    </header>
+    <!-- Progress Section -->
+    <section class="progress-section">
+      <div class="progress-label">
+        <span id="progress-text">0 of 0 tasks complete</span>
+        <span id="progress-percent">0%</span>
+      </div>
+      <!-- progress bar tracker -->
+      <div class="progress-bar-track">
+        <div class="progress-bar-fill" id="progress-bar"></div>
+      </div>
+    </section>
+
+    <!-- task form -->
+    <section class="add-task-section">
+      <input type="text" id="task-input" placeholder="Add a new task..."
+        maxlength="100"
+      />
+      <button id="add-btn" onclick="addTask()">+ Add Task</button>
+    </section>
+
+    <!-- List all task -->
+    <section class="task-list-section">
+      <ul id="task-list"></ul>
+      <p class="empty-state" id="empty-state">No tasks yet. Add one above.</p>
+    </section>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
